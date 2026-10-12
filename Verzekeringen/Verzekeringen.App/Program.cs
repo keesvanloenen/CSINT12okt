@@ -6,8 +6,37 @@ internal class Program
     {
 
         // DemoNullableValueTypes();
-        DemoEnum();
+        // DemoEnum();
+        // DemoTuples();
+        DemoDeconstruct();
+
     }
+
+    private static void DemoDeconstruct()
+    {
+        var polis = new Polis { Code = "ABC123", Klant = new Klant("Mo"), Premie = 123m };
+        var (code, klantnaam, premie) = polis;
+        Console.WriteLine($"{code}\t{klantnaam}\t{premie}");
+    }
+
+    private static void DemoTuples()
+    {
+        //(string, decimal) premieInfo = ("WA Verzekering", 110.00m);
+        //Console.WriteLine($"Premie: {premieInfo.Item2}");
+
+        (string Product, decimal Premie) premieInfo = ("WA Verzekering", 110.00m);
+        Console.WriteLine($"Premie: {premieInfo.Premie}");
+
+        (string Product, decimal Premie) premieInfo2 = ("WA Verzekering", 110.00m);
+        Console.WriteLine($"Premie: {premieInfo.Premie}");
+
+        Console.WriteLine($"Equal: {premieInfo == premieInfo2}");
+
+        var (_, toegepast)= SchadeBerekening.BerekenUitkering(1500m, 600m);
+        Console.WriteLine($"Uitkering: {toegepast}");
+    }
+
+
 
     private static void DemoEnum()
     {

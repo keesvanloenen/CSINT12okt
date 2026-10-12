@@ -6,6 +6,12 @@ public class Polis
     public Klant? Klant { get; set; }
     public decimal? Premie { get; set; }
 
+	public void Deconstruct(out string? code, out string? klantNaam, out decimal? premie)
+	{
+		code = Code;
+		klantNaam = Klant?.Naam;
+		premie = Premie;
+	}
 	//public Polis(string code)
 	//{
 	//	Initialize(code);

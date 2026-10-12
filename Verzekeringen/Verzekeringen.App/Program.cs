@@ -1,21 +1,48 @@
-﻿namespace Verzekeringen.App;
+﻿using System.Text;
+
+namespace Verzekeringen.App;
 
 internal class Program
 {
     static void Main(string[] args)
     {
+        Console.OutputEncoding = Encoding.UTF8;
 
         // DemoNullableValueTypes();
         // DemoEnum();
         // DemoTuples();
-        DemoDeconstruct();
+        //DemoDeconstruct();
+        DemoRecord();
+    }
+
+    private static void DemoRecord()
+    {
+        // ToString()
+        var schade1 = new Schade("Hagelschade", 9967m, DateTime.Now);
+        Console.WriteLine(schade1);
+
+        // Deconstruct()
+        var (_, Bedrag, Datum) = schade1;
+        Console.WriteLine($"{Datum}: {Bedrag:C}");
+
+        // Value-based equality ...
+
+        // Werk immutable met ... with
+
+        Schade schade2 = schade1 with
+        {
+            Datum = schade1.Datum.AddDays(6 * 7),
+            Bedrag = schade1.Bedrag - 3000,
+        };
+
+        Console.WriteLine(schade2);
 
     }
 
     private static void DemoDeconstruct()
     {
         var polis = new Polis { Code = "ABC123", Klant = new Klant("Mo"), Premie = 123m };
-        var (code, klantnaam, premie) = polis;
+        var (code, klantnaam, premie) = polis;      // Deconstruct
         Console.WriteLine($"{code}\t{klantnaam}\t{premie}");
     }
 
@@ -35,8 +62,6 @@ internal class Program
         var (_, toegepast)= SchadeBerekening.BerekenUitkering(1500m, 600m);
         Console.WriteLine($"Uitkering: {toegepast}");
     }
-
-
 
     private static void DemoEnum()
     {

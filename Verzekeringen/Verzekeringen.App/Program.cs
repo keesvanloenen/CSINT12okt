@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Numerics;
+using System.Text;
 
 namespace Verzekeringen.App;
 
@@ -12,7 +13,150 @@ internal class Program
         // DemoEnum();
         // DemoTuples();
         //DemoDeconstruct();
-        DemoRecord();
+        //DemoRecord();
+        //DemoSchadeCollection();
+        //DemoCollectionInitializer();
+        BitArray_Introductie();
+
+    }
+
+    private static void BitArray_Introductie()
+    {
+        bool[] flagsA = new bool[8];
+
+        flagsA[0] = true;
+        flagsA[3] = true;
+        flagsA[6] = true;
+
+        // Dit wordt:
+        // 01001001
+
+        // Dit kan in één byte:
+        byte flagsB = 0b01001001;
+
+        // ------------------------------------------------------
+
+        /*
+        Bitwise OR |
+        Gebruik je om bits aan te zetten:
+
+        01000000
+        00001000
+        --------
+        01001000   OR
+        */
+
+        
+        byte a = 0b01000000;
+        byte b = 0b00001000;
+
+        byte result = (byte)(a | b);
+
+        // ------------------------------------------------------
+
+        /*
+        Bit shift <<
+        1 << n maakt een getal waarbij bit n aanstaat
+        */
+
+        byte flagsC = 0;
+        flagsC |= 1 << 2;
+        flagsC |= 1 << 5;
+
+        // ------------------------------------------------------
+
+        /* 
+        Bitwise AND &
+        Gebruik je om bits te controleren
+        
+        1 & 1 = 1
+        1 & 0 = 0
+        0 & 1 = 0
+        0 & 0 = 0
+        */
+
+        byte flagsD = 0b01001000;
+        bool isBit3Set = (flagsD & (1 << 3)) != 0;
+
+        /*
+        flags       01001000
+        mask        00001000
+                    --------
+        AND         00001000
+        */
+
+        // ------------------------------------------------------
+
+        /*
+        Bitwise & samen met ~
+        Gebruik je om bits uit te zetten:
+        */
+
+        // voorbeeld:
+        //flagsD &= ~(1 << 3);
+
+        // 1 << 3 = 00001000
+
+        // Negeren/inverteren:
+        // 11110111
+
+        /*
+        flags       01001000
+        mask        11110111
+                    --------
+        AND         01000000    Bit 3 is nu weg
+
+
+
+
+
+    }
+
+    private static void DemoCollectionInitializer()
+    {
+        List<char> characters = new List<char>() { 'b', 'c', 'd' };
+        // collection initializer                ^^^^^^^^^^^^^^^^^
+
+        List<char> characters2 = new () { 'b', 'c', 'd' };
+        List<char> characters3 = [ 'b', 'c', 'd' ];
+        // collection expr.      ^^^^^^^^^^^^^^^^^
+
+        characters.AddRange(['e', 'f']);
+
+        characters = ['a', .. characters, 'g', 'h'];            // Joepie, spreaden
+
+        foreach (var character in characters) 
+        {
+            Console.Write(character);
+        }
+
+    }
+
+    private static void DemoSchadeCollection()
+    {
+        var schadeCollection = new SchadeCollection();
+
+        var schade1 = new Schade("A", 1m, DateTime.Now);
+        var schade2 = new Schade("B", 2m, DateTime.Now);
+        var schade3 = new Schade("c", 3m, DateTime.Now);
+        var schade4 = new Schade("d", 4m, DateTime.Now);
+        var schade5 = new Schade("e", 5m, DateTime.Now);
+
+        schadeCollection.Add(schade1);
+        schadeCollection.Add(schade2);
+        schadeCollection.Add(schade3);
+        schadeCollection.Add(schade4);
+        schadeCollection.Add(schade5);
+
+        Console.WriteLine(schadeCollection.Count);
+        Console.WriteLine(schadeCollection[1]);
+
+        schadeCollection[4] = new Schade("Z", 9m, DateTime.Now);
+        Console.WriteLine(schadeCollection[0]);
+
+        Schade? schadeB = schadeCollection["B"];
+        var bedragBijSchadeB = schadeB?.Bedrag.ToString() ?? "n/b";
+        Console.WriteLine($"Bedrag bij schade B: {schadeB?.Bedrag:C}");
     }
 
     private static void DemoRecord()
@@ -101,7 +245,8 @@ internal class Program
         // pattern matching: is
         // kun je gebruiken bij type checks of null:
 
-        if (s1 is string) {  /* ... */ }
+        if (s1 is string) {  /* ... */
+    }
         if (s1 is null) {  /* ... */ }
         // if (s1 is s2) {  /* ... */ } // dit mag dus niet
 

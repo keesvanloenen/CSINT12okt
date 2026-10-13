@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="DelegatesDemo/DelegatesDemo.csproj" Id="06f9805b-13e3-42c2-80a5-6fe3ac55252a" />
   <Project Path="Verzekeringen.App/Verzekeringen.App.csproj" />
 </Solution>

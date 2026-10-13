@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|solutionrelative:verzekeringen.app\\schadecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|c:\\work\\csint12okt\\verzekeringen\\verzekeringen.app\\contactvoorkeur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|solutionrelative:verzekeringen.app\\contactvoorkeur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|c:\\work\\csint12okt\\verzekeringen\\verzekeringen.app\\schade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|solutionrelative:verzekeringen.app\\schade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -80,14 +84,14 @@
               "RelativeDocumentMoniker": "Verzekeringen.App\\SchadeCollection.cs",
               "ToolTip": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\SchadeCollection.cs",
               "RelativeToolTip": "Verzekeringen.App\\SchadeCollection.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAACMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAswEQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T12:30:46.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Klant.cs",
               "DocumentMoniker": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\Klant.cs",
               "RelativeDocumentMoniker": "Verzekeringen.App\\Klant.cs",
@@ -99,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Schade.cs",
               "DocumentMoniker": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\Schade.cs",
               "RelativeDocumentMoniker": "Verzekeringen.App\\Schade.cs",
@@ -107,12 +111,11 @@
               "RelativeToolTip": "Verzekeringen.App\\Schade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T11:47:37.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-12T11:47:37.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SchadeBerekening.cs",
               "DocumentMoniker": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\SchadeBerekening.cs",
               "RelativeDocumentMoniker": "Verzekeringen.App\\SchadeBerekening.cs",
@@ -124,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Polis.cs",
               "DocumentMoniker": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\Polis.cs",
               "RelativeDocumentMoniker": "Verzekeringen.App\\Polis.cs",
@@ -140,12 +143,24 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\Program.cs",
               "RelativeDocumentMoniker": "Verzekeringen.App\\Program.cs",
-              "ToolTip": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\Program.cs*",
-              "RelativeToolTip": "Verzekeringen.App\\Program.cs*",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAiwCQAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\Program.cs",
+              "RelativeToolTip": "Verzekeringen.App\\Program.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAqwJgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T07:21:02.341Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactVoorkeur.cs",
+              "DocumentMoniker": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\ContactVoorkeur.cs",
+              "RelativeDocumentMoniker": "Verzekeringen.App\\ContactVoorkeur.cs",
+              "ToolTip": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\ContactVoorkeur.cs",
+              "RelativeToolTip": "Verzekeringen.App\\ContactVoorkeur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T13:52:50.873Z"
             }
           ]
         },

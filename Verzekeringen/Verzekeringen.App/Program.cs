@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-using System.Text;
+﻿using System.Text;
 
 namespace Verzekeringen.App;
 
@@ -14,9 +13,9 @@ internal class Program
         // DemoTuples();
         //DemoDeconstruct();
         //DemoRecord();
-        //DemoSchadeCollection();
+        DemoSchadeCollection();
         //DemoCollectionInitializer();
-        BitArray_Introductie();
+        //BitArray_Introductie();
 
     }
 
@@ -105,7 +104,7 @@ internal class Program
         mask        11110111
                     --------
         AND         01000000    Bit 3 is nu weg
-
+        */
 
 
 
@@ -134,19 +133,25 @@ internal class Program
 
     private static void DemoSchadeCollection()
     {
-        var schadeCollection = new SchadeCollection();
+        //var schadeCollection = new SchadeCollection();
 
-        var schade1 = new Schade("A", 1m, DateTime.Now);
-        var schade2 = new Schade("B", 2m, DateTime.Now);
+
+        //schadeCollection.Add(schade1);
+        //schadeCollection.Add(schade2);
+        //schadeCollection.Add(schade3);
+        //schadeCollection.Add(schade4);
+        //schadeCollection.Add(schade5);
+
+        var schade1 = new Schade("a", 1m, DateTime.Now);
+        var schade2 = new Schade("b", 2m, DateTime.Now);
         var schade3 = new Schade("c", 3m, DateTime.Now);
         var schade4 = new Schade("d", 4m, DateTime.Now);
         var schade5 = new Schade("e", 5m, DateTime.Now);
 
-        schadeCollection.Add(schade1);
-        schadeCollection.Add(schade2);
-        schadeCollection.Add(schade3);
-        schadeCollection.Add(schade4);
-        schadeCollection.Add(schade5);
+        SchadeCollection schadeCollection = 
+        [
+            schade1, schade2, schade3, schade4, schade5
+        ];
 
         Console.WriteLine(schadeCollection.Count);
         Console.WriteLine(schadeCollection[1]);
@@ -157,6 +162,17 @@ internal class Program
         Schade? schadeB = schadeCollection["B"];
         var bedragBijSchadeB = schadeB?.Bedrag.ToString() ?? "n/b";
         Console.WriteLine($"Bedrag bij schade B: {schadeB?.Bedrag:C}");
+
+        for (var i = 0; i < schadeCollection.Count; i++)
+        {
+            Console.WriteLine(schadeCollection[i]);
+        }
+
+        // dankzij yield return
+        foreach (var schade in schadeCollection)
+        {
+            Console.WriteLine(schade);
+        }
     }
 
     private static void DemoRecord()

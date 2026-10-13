@@ -17,14 +17,68 @@ internal class Program
         // DemoSchadeCollection();
         // DemoCollectionInitializer();
         // BitArray_Introductie();
-        DemoDependencyInjection();
+        // DemoDependencyInjection();
+        // DemoVariadic();
+
+        //DemoTypeConversions();
+        //DemoRealConversions();
+        DemoUserDefinedConversions();
+
+    }
+
+    private static void DemoUserDefinedConversions()
+    {
+        BedragAlsRecordStruct2 bedrag = -6.14m;      // impliciete conversie van 6.14 naar 6.14 EUR
+        Console.WriteLine(bedrag);
+        decimal decimaalGetal = (decimal)bedrag;    // expliciete conversie
+        Console.WriteLine(decimaalGetal);
+    }
+
+    private static void DemoRealConversions()
+    {
+        int intValue = 42;
+
+        double doubleValue = intValue;  // implicit conversie (geen verlies van data)
+
+        double pi = 3.14d;
+        int rounded = (int)pi;            // explicit conversie (mogelijk verlies van data)
+
+        
+    }
+
+    private static void DemoTypeConversions()
+    {
+        int number = 42;
+
+        object obj = number;    // Upcasting (value type -> object = boxing)
+        Console.WriteLine(obj);
+
+        int backToInt = (int)obj;   // Dowcasting (object -> value type = unboxing)
+        Console.WriteLine(backToInt);
+    }
+
+    private static void DemoVariadic()
+    {
+        PrintCharacters('a', 'b', 'c');
+        PrintCharacters(['d', 'e', 'f']);
+    }
+
+    private static void PrintCharacters(params List<char> characters)
+    {
+        characters.Add('-');
+
+        foreach (char c in characters)
+        {
+            Console.WriteLine(c);
+        }
     }
 
     private static void DemoDependencyInjection()
     {
         var klant = new Klant("D. de Jong");
+        var tariefApi = new TariefApi();
 
-        Polis autoPolis = new AutoPolis { Code = "A1", Klant = klant };
+        Polis autoPolis = new AutoPolis(tariefApi) { Code = "A1", Klant = klant };
         autoPolis.BerekenPremie();
         Console.WriteLine($"AutoPolis premie: {autoPolis.Premie}");
     }

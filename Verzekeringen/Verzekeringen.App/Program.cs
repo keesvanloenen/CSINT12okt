@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using Verzekeringen.App.Polissen;
 
 namespace Verzekeringen.App;
 
@@ -11,12 +12,21 @@ internal class Program
         // DemoNullableValueTypes();
         // DemoEnum();
         // DemoTuples();
-        //DemoDeconstruct();
-        //DemoRecord();
-        DemoSchadeCollection();
-        //DemoCollectionInitializer();
-        //BitArray_Introductie();
+        // DemoDeconstruct();
+        // DemoRecord();
+        // DemoSchadeCollection();
+        // DemoCollectionInitializer();
+        // BitArray_Introductie();
+        DemoDependencyInjection();
+    }
 
+    private static void DemoDependencyInjection()
+    {
+        var klant = new Klant("D. de Jong");
+
+        Polis autoPolis = new AutoPolis { Code = "A1", Klant = klant };
+        autoPolis.BerekenPremie();
+        Console.WriteLine($"AutoPolis premie: {autoPolis.Premie}");
     }
 
     private static void BitArray_Introductie()
@@ -159,9 +169,9 @@ internal class Program
         schadeCollection[4] = new Schade("Z", 9m, DateTime.Now);
         Console.WriteLine(schadeCollection[0]);
 
-        Schade? schadeB = schadeCollection["B"];
-        var bedragBijSchadeB = schadeB?.Bedrag.ToString() ?? "n/b";
-        Console.WriteLine($"Bedrag bij schade B: {schadeB?.Bedrag:C}");
+        //Schade? schadeB = schadeCollection["B"];
+        //var bedragBijSchadeB = schadeB?.Bedrag.ToString() ?? "n/b";
+        //Console.WriteLine($"Bedrag bij schade B: {schadeB?.Bedrag:C}");
 
         for (var i = 0; i < schadeCollection.Count; i++)
         {

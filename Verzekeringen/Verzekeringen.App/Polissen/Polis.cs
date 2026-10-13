@@ -1,4 +1,4 @@
-﻿namespace Verzekeringen.App;
+﻿namespace Verzekeringen.App.Polissen;
 
 public class Polis
 {
@@ -12,13 +12,10 @@ public class Polis
 		klantNaam = Klant?.Naam;
 		premie = Premie;
 	}
-	//public Polis(string code)
-	//{
-	//	Initialize(code);
-	//}
 
- //   private void Initialize(string code)
- //   {
- //       Code = code;
- //   }
+	public virtual void BerekenPremie()
+	{
+		Console.WriteLine("Bereken standaard premie");
+		Premie = 50m;
+	}
 }

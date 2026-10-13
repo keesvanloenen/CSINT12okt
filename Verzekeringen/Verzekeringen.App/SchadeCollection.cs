@@ -23,13 +23,13 @@ public class SchadeCollection : IEnumerable<Schade>
 	}
 
 	// Use at your risk:
-	public Schade? this[string omschrijving]
-	{
-		get
-		{
-			return _schades.FirstOrDefault(s => s.Omschrijving == omschrijving);
-		}
-	}
+	//public Schade? this[string omschrijving]
+	//{
+	//	get
+	//	{
+	//		return _schades.FirstOrDefault(s => s.Omschrijving == omschrijving);
+	//	}
+	//}
 
 
 

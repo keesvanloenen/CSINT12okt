@@ -22,7 +22,27 @@ internal class Program
 
         //DemoTypeConversions();
         //DemoRealConversions();
-        DemoUserDefinedConversions();
+        //DemoUserDefinedConversions();
+        DemoUserDefinedOperators();
+
+       
+    }
+
+    private static void DemoUserDefinedOperators()
+    {
+        var b1 = new Bedrag(150.33m);
+
+        var b2 = new Bedrag(150.33m);
+
+        Console.WriteLine(b1 + b2);
+
+        Console.WriteLine(b1 == b2);
+
+        Console.WriteLine(b1.Equals(b2));
+
+        object o1 = new Bedrag(100.10m);
+        object o2 = new Bedrag(100.10m);
+        Console.WriteLine(o1.Equals(o2));
 
     }
 

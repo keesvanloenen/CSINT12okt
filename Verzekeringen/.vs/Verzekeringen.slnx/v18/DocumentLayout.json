@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Work\\csint12okt\\Verzekeringen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|c:\\work\\csint12okt\\verzekeringen\\verzekeringen.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|solutionrelative:verzekeringen.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|c:\\work\\csint12okt\\verzekeringen\\verzekeringen.app\\bedrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|solutionrelative:verzekeringen.app\\bedrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|c:\\work\\csint12okt\\verzekeringen\\verzekeringen.app\\bedragalsrecordstruct1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|solutionrelative:verzekeringen.app\\bedragalsrecordstruct1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|c:\\work\\csint12okt\\verzekeringen\\verzekeringen.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|solutionrelative:verzekeringen.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|c:\\work\\csint12okt\\verzekeringen\\verzekeringen.app\\bedragalsrecordstruct2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|solutionrelative:verzekeringen.app\\bedragalsrecordstruct2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|c:\\work\\csint12okt\\verzekeringen\\verzekeringen.app\\bedrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|solutionrelative:verzekeringen.app\\bedrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|c:\\work\\csint12okt\\verzekeringen\\verzekeringen.app\\bedragalsrecordstruct1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|solutionrelative:verzekeringen.app\\bedragalsrecordstruct1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21E0D165-DDD9-FB63-83D6-793CCB64C713}|Verzekeringen.App\\Verzekeringen.App.csproj|c:\\work\\csint12okt\\verzekeringen\\verzekeringen.app\\polissen\\autopolis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -112,20 +112,20 @@
               "RelativeDocumentMoniker": "Verzekeringen.App\\BedragAlsRecordStruct2.cs",
               "ToolTip": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\BedragAlsRecordStruct2.cs",
               "RelativeToolTip": "Verzekeringen.App\\BedragAlsRecordStruct2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-13T11:30:27.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Bedrag.cs",
               "DocumentMoniker": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\Bedrag.cs",
               "RelativeDocumentMoniker": "Verzekeringen.App\\Bedrag.cs",
-              "ToolTip": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\Bedrag.cs",
-              "RelativeToolTip": "Verzekeringen.App\\Bedrag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "ToolTip": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\Bedrag.cs*",
+              "RelativeToolTip": "Verzekeringen.App\\Bedrag.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-13T11:02:25.322Z",
               "EditorCaption": ""
@@ -171,26 +171,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\Program.cs",
               "RelativeDocumentMoniker": "Verzekeringen.App\\Program.cs",
               "ToolTip": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\Program.cs*",
               "RelativeToolTip": "Verzekeringen.App\\Program.cs*",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwB4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowC4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T07:21:02.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BedragAlsRecordStruct1.cs",
               "DocumentMoniker": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\BedragAlsRecordStruct1.cs",
               "RelativeDocumentMoniker": "Verzekeringen.App\\BedragAlsRecordStruct1.cs",
-              "ToolTip": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\BedragAlsRecordStruct1.cs*",
-              "RelativeToolTip": "Verzekeringen.App\\BedragAlsRecordStruct1.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Work\\csint12okt\\Verzekeringen\\Verzekeringen.App\\BedragAlsRecordStruct1.cs",
+              "RelativeToolTip": "Verzekeringen.App\\BedragAlsRecordStruct1.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-13T11:31:47.225Z",
               "EditorCaption": ""

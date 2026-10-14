@@ -1,4 +1,7 @@
 <Solution>
+  <Project Path="covariance-en-contravariance/covariance-en-contravariance.csproj" Id="c612c17d-c055-4d74-b683-7fe380c975f0" />
   <Project Path="DelegatesDemo/DelegatesDemo.csproj" Id="06f9805b-13e3-42c2-80a5-6fe3ac55252a" />
+  <Project Path="OperatorOverloadingOnGenerics/OperatorOverloadingOnGenerics.csproj" Id="eb1e884b-d547-4c6a-a422-28eaeb0a5cf2" />
+  <Project Path="static-en-generics-demo/static-en-generics-demo.csproj" Id="0f77580c-cfc5-45ce-b787-636c7bcc9b91" />
   <Project Path="Verzekeringen.App/Verzekeringen.App.csproj" />
 </Solution>

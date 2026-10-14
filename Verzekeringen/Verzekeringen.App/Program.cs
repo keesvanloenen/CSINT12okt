@@ -20,14 +20,25 @@ internal class Program
         // DemoDependencyInjection();
         // DemoVariadic();
 
-        //DemoTypeConversions();
-        //DemoRealConversions();
-        //DemoUserDefinedConversions();
-        //DemoUserDefinedOperators();
+        // DemoTypeConversions();
+        // DemoRealConversions();
+        // DemoUserDefinedConversions();
+        // DemoUserDefinedOperators();
 
-        DemoEvents();
+        // DemoEvents();
+        DemoMyCollection();
+    }
 
-       
+    private static void DemoMyCollection()
+    {
+        MyCollection<Schade> schades = 
+        [
+            new Schade("Lekke dakgoot", 100.50m, DateTime.Now.AddDays(-3)),
+            new Schade("Gasexplosie", 30000m, DateTime.Now.AddDays(-2)),
+        ];
+
+        var totaal = schades.Sum(s => s.Bedrag);
+        Console.WriteLine($"Total schade: {totaal}");
     }
 
     private static void DemoEvents()

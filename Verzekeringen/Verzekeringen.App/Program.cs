@@ -23,9 +23,39 @@ internal class Program
         //DemoTypeConversions();
         //DemoRealConversions();
         //DemoUserDefinedConversions();
-        DemoUserDefinedOperators();
+        //DemoUserDefinedOperators();
+
+        DemoEvents();
 
        
+    }
+
+    private static void DemoEvents()
+    {
+        var klant = new Klant("D. de Jong");
+        var tariefApi = new TariefApi();
+
+        var polis = new AutoPolis(tariefApi)
+        {
+            Code = "Pol-123",
+            Klant = klant,
+        };
+
+        polis.ClaimIngediend += OnClaimIngediend!;
+                
+        polis.VerwerkClaim(3000m, "Autoreparatie vanuit aanrijding");
+        Console.WriteLine($"Totaal uitgekeerd: {polis.Uitgekeerd}");
+        Console.WriteLine(polis.IsRisicoVol);
+
+        polis.VerwerkClaim(1200m, "Vervangen dak");
+        Console.WriteLine($"Totaal uitgekeerd: {polis.Uitgekeerd}");
+        Console.WriteLine(polis.IsRisicoVol);
+
+    }
+
+    private static void OnClaimIngediend(object sender, ClaimArgs args)
+    {
+        Console.WriteLine($"Melding van een ({sender.GetType().Name}) {((Polis)sender).Code}: Bedrag: {args.Bedrag}, Omschrijving: {args.Omschrijving}");
     }
 
     private static void DemoUserDefinedOperators()
